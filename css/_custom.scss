@@ -1,0 +1,97 @@
+$primary: #5179d6;
+$success: #4fd69c;
+$danger: #f75676;
+$warning: #e5ae67;
+$purple: #8451d6;
+$light: #f8f9fa;
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.bg-success {
+  background-color: $success !important;
+}
+
+.text-success {
+  color: $success !important;
+}
+
+.bg-danger {
+  background-color: $danger !important;
+}
+
+.text-danger {
+  color: $danger !important;
+}
+
+.bg-warning {
+  background-color: $warning !important;
+}
+
+.text-warning {
+  color: $warning !important;
+}
+
+.bg-purple {
+  background-color: $purple !important;
+}
+
+.text-purple {
+  color: $purple !important;
+}
+
+.text-12 {
+  font-size: 12px !important;
+}
+
+.text-14 {
+  font-size: 14px !important;
+}
+
+.text-16 {
+  font-size: 16px !important;
+}
+
+.text-18 {
+  font-size: 18px !important;
+}
+
+.text-20 {
+  font-size: 20px !important;
+}
+
+.bg-o-primary {
+  background-color: rgba($primary, 0.2)!important;
+}
+
+.bg-o-warning {
+  background-color: rgba($warning, 0.2)!important;
+}
+
+.bg-o-success {
+  background-color: rgba($success, 0.2)!important;
+}
+
+.bg-o-danger {
+  background-color: rgba($danger, 0.2)!important;
+}
+
+.btn-success {
+  background-color: $success;
+  color: #fff;
+  border: none;
+  &:hover {
+    opacity: 0.9;
+    background-color: $success;
+  }
+}
+
+.custom-shadow {
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.015) !important;
+  box-shadow: 0 0 2rem 0 rgb(136 152 170 / 5%);
+}

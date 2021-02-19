@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Task Management</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 shadow mx-auto">
+
+                <div class="container">
+                    <div class="d-flex flex-column vh-100">
+                        <div class="d-flex align-items-center justify-content-between position-absolute w-100"
+                            style="top: 10px; right: 30px; z-index: 2; padding-left: 60px;">
+                            <div class="boxIcon bg-white border border-light">
+                                <i class="fas fa-bars text-12 text-secondary"></i>
+                            </div>
+                            <div class=" bgIconTop bg-white border border-light">
+                                <a href="#" class="p-2">
+                                    <i class="far fa-comment-dots text-secondary"></i>
+                                    <div class="notify ml-3">
+                                        <span class="dot">2</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="p-2">
+                                    <i class="far text-14 fa-bell text-secondary p-0"></i>
+                                    <div class="notify ml-5">
+                                        <span class="dot">20</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="scroll-Y pt-1"
+                            style="overflow-y: scroll; overflow-x: hidden; min-height: 100vh; position: relative;">
+                            <div class="row control-dashboard pt-5">
+                                <div class="col-6 mb-3">
+                                    <div class="card bg-new border-0 bg-white custom-shadow text-primary">
+                                        <div class="card-body py-3">
+                                            <div class="text-right">
+                                                <i class="fas fa-folder-plus h3"></i>
+                                            </div>
+                                            <p class="m-0 font-weight-bold">New Task</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <div class="card border-0 bg-white custom-shadow text-warning">
+                                        <div class="card-body py-3">
+                                            <div class="text-right">
+                                                <i class="fas fa-folder-open h3"></i>
+                                            </div>
+                                            <p class="m-0 text-warning font-weight-bold">Progress</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="card border-0 bg-white custom-shadow text-success">
+                                        <div class="card-body py-3">
+                                            <div class="text-right">
+                                                <i class="far fa-folder h3"></i>
+                                            </div>
+                                            <p class="m-0 text-success font-weight-bold">Complete</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <div class="card border-0 bg-white custom-shadow text-danger">
+                                        <div class="card-body py-3">
+                                            <div class="text-right">
+                                                <i class="fas fa-folder-minus h3"></i>
+                                            </div>
+                                            <p class="m-0 text-danger font-weight-bold">Cancel</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- List Task -->
+                            <div class="boxTitle d-flex justify-content-between mt-1 align-items-center">
+                                <h5 class="font-weight-bold text-14 text-secondary m-0">All Task</h5>
+                                <a href="#" class="text-decoration-none btn btn-success text-12 shadow-sm">
+                                    <i class="fas fa-plus-circle mr-1 text-12"></i> Add Task</a>
+                            </div>
+
+                            <div class="card mt-2 border-0">
+                                <div class="card-body m-0 py-0 px-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-2 text-center">
+                                            <div class="boxIcon bg-o-primary">
+                                                <i class="fas fa-folder-plus text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 py-3 ml-0 pl-2">
+                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
+                                                Task Baru</h6>
+                                            <p class="m-0 text-truncate text-14"> <span
+                                                    class="badge bg-light text-secondary">Mentari</span> <i
+                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Agung</span>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Budi</span>
+                                                <span class="badge bg-light text-secondary font-weight-normal">Dhea
+                                                    Amelia Putri</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 text-center">
+                                            <a href="#">
+                                                <i class="fas fa-angle-right text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2 border-0">
+                                <div class="card-body m-0 py-0 px-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-2 text-center">
+                                            <div class="boxIcon bg-o-success">
+                                                <i class="far fa-folder text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 py-3 ml-0 pl-2">
+                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
+                                                Task Selesai</h6>
+                                            <p class="m-0 text-truncate text-14"> <span
+                                                    class="badge bg-light text-secondary">Ronal</span> <i
+                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Novel</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 text-center">
+                                            <a href="#">
+                                                <i class="fas fa-angle-right text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2 border-0">
+                                <div class="card-body m-0 py-0 px-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-2 text-center">
+                                            <div class="boxIcon bg-o-warning">
+                                                <i class="fas fa-folder-open text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 py-3 ml-0 pl-2">
+                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
+                                                Task Sedang Dikerjakan Oleh Ahlinya</h6>
+                                            <p class="m-0 text-truncate text-14"> <span
+                                                    class="badge bg-light text-secondary">Romanda</span> <i
+                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Aidil</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 text-center">
+                                            <a href="#">
+                                                <i class="fas fa-angle-right text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2 border-0">
+                                <div class="card-body m-0 py-0 px-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-2 text-center">
+                                            <div class="boxIcon bg-o-success">
+                                                <i class="far fa-folder text-success"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 py-3 ml-0 pl-2">
+                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
+                                                Task Selesai</h6>
+                                            <p class="m-0 text-truncate text-14"> <span
+                                                    class="badge bg-light text-secondary">Ronal</span> <i
+                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Novel</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 text-center">
+                                            <a href="#">
+                                                <i class="fas fa-angle-right text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-2 border-0">
+                                <div class="card-body m-0 py-0 px-3">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-2 text-center">
+                                            <div class="boxIcon bg-o-warning">
+                                                <i class="fas fa-folder-open text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 py-3 ml-0 pl-2">
+                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
+                                                Task Sedang Dikerjakan Oleh Ahlinya</h6>
+                                            <p class="m-0 text-truncate text-14"> <span
+                                                    class="badge bg-light text-secondary">Romanda</span> <i
+                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
+                                                <span
+                                                    class="badge bg-light text-secondary font-weight-normal">Aidil</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-2 text-center">
+                                            <a href="#">
+                                                <i class="fas fa-angle-right text-secondary"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <div class="text-center bottomBar text-secondary w-100"
+                            style="z-index: 12; position: absolute;">
+                            <div class="row shadow bg-white d-flex align-items-center h-100">
+                                <div class="col-3">
+                                    <i class="fas fa-archive text-14 text-primary"></i>
+                                    <p class="m-0 text-12 text-primary font-weight-bold">Home</p>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fab fa-buffer text-14"></i>
+                                    <p class="m-0 text-12">Task</p>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fas fa-comment-dots text-14"></i>
+                                    <p class="m-0 text-12">Inbox</p>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fas fa-record-vinyl text-14"></i>
+                                    <p class="m-0 text-12">ROM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+</body>
+
+</html>

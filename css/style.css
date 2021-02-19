@@ -1,0 +1,176 @@
+.bg-primary {
+  background-color: #5179d6 !important;
+}
+
+.text-primary {
+  color: #5179d6 !important;
+}
+
+.bg-success {
+  background-color: #4fd69c !important;
+}
+
+.text-success {
+  color: #4fd69c !important;
+}
+
+.bg-danger {
+  background-color: #f75676 !important;
+}
+
+.text-danger {
+  color: #f75676 !important;
+}
+
+.bg-warning {
+  background-color: #e5ae67 !important;
+}
+
+.text-warning {
+  color: #e5ae67 !important;
+}
+
+.bg-purple {
+  background-color: #8451d6 !important;
+}
+
+.text-purple {
+  color: #8451d6 !important;
+}
+
+.text-12 {
+  font-size: 12px !important;
+}
+
+.text-14 {
+  font-size: 14px !important;
+}
+
+.text-16 {
+  font-size: 16px !important;
+}
+
+.text-18 {
+  font-size: 18px !important;
+}
+
+.text-20 {
+  font-size: 20px !important;
+}
+
+.bg-o-primary {
+  background-color: rgba(81, 121, 214, 0.2) !important;
+}
+
+.bg-o-warning {
+  background-color: rgba(229, 174, 103, 0.2) !important;
+}
+
+.bg-o-success {
+  background-color: rgba(79, 214, 156, 0.2) !important;
+}
+
+.bg-o-danger {
+  background-color: rgba(247, 86, 118, 0.2) !important;
+}
+
+.btn-success {
+  background-color: #4fd69c;
+  color: #fff;
+  border: none;
+}
+.btn-success:hover {
+  opacity: 0.9;
+  background-color: #4fd69c;
+}
+
+.custom-shadow {
+  box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.05);
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f6f9fc;
+}
+
+.iconBande {
+  height: 100%;
+  width: 50%;
+  right: 0;
+}
+.iconBande img {
+  height: 100%;
+  width: 100%;
+}
+
+.control-dashboard p {
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.control-dashboard .card {
+  border-radius: 20px;
+}
+
+.boxImg {
+  width: 50%;
+}
+
+.boxImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.boxIcon {
+  background-color: rgba(241, 0, 0, 0.2);
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.scroll-Y::-webkit-scrollbar {
+  width: 0;
+}
+
+.bgIconTop {
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.bottomBar {
+  border-radius: 100px;
+  bottom: 0;
+  right: 0;
+}
+.bottomBar .row {
+  margin: 0 1px !important;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+}
+
+.notify {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: #f75676;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+}
+.notify span {
+  color: white;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

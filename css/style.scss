@@ -1,0 +1,93 @@
+@import "_custom.scss";
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f6f9fc;
+}
+
+.iconBande {
+  height: 100%;
+  width: 50%;
+  right: 0;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.control-dashboard {
+  p {
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .card {
+    border-radius: 20px;
+  }
+}
+
+.boxImg {
+  width: 50%;
+}
+
+.boxImg img {
+  height: 100%;
+  width: 100%;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.boxIcon {
+  background-color: rgba(241, 0, 0, 0.2);
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+
+// test
+.scroll-Y{
+&::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.bgIconTop{
+  border-radius: 100px ;
+  padding: 5px;
+}
+
+.bottomBar{
+  border-radius: 100px;
+  bottom: 0;
+  right: 0;
+  .row{
+    margin: 0 1px!important;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+  }
+}
+
+.notify{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 100px;
+  background-color: $danger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
+  span{
+    color: white;
+    font-size: 10px;
+  }
+}
