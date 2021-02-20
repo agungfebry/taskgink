@@ -90,7 +90,8 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  background-color: #f6f9fc;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .iconBande {
@@ -171,6 +172,32 @@ body {
 .notify span {
   color: white;
   font-size: 10px;
+}
+
+.slideTop {
+  transform: translateY(-100%);
+}
+.slideTop .card {
+  height: 85vh;
+  transition: 0.4s ease-in-out;
+}
+
+.slideDown {
+  transform: translateY(0);
+}
+.slideDown .card {
+  height: 0vh;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  transition: 0.4s ease-in-out;
+}
+
+.overlay {
+  height: 100vh;
+  z-index: 200;
+  background-color: rgba(241, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
