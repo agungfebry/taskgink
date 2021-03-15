@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -49,7 +49,8 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="scroll-Y pt-1" style="overflow-y: scroll; min-height: 100vh; position: relative;">
+                        <div class="scroll-Y pt-1"
+                            style="overflow-y: scroll; min-height: 100vh; position: relative; overflow-x: hidden; padding-bottom: 75px;">
                             <div class="row control-dashboard pt-5">
                                 <div class="col-6 mb-3">
                                     <div class="card bg-new border-0 bg-white custom-shadow text-primary">
@@ -124,7 +125,7 @@
                                             </p>
                                         </div>
                                         <div class="col-2 text-center">
-                                            <a href="#">
+                                            <a href="detailTask.html">
                                                 <i class="fas fa-angle-right text-secondary"></i>
                                             </a>
                                         </div>
@@ -209,32 +210,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card mt-2 border-0">
-                                <div class="card-body m-0 py-0 px-3">
-                                    <div class="row d-flex align-items-center">
-                                        <div class="col-2 text-center">
-                                            <div class="boxIcon bg-o-warning">
-                                                <i class="fas fa-folder-open text-warning"></i>
-                                            </div>
-                                        </div>
-                                        <div class="col-8 py-3 ml-0 pl-2">
-                                            <h6 class="m-0 text-truncate text-secondary text-14 font-weight-bold">
-                                                Task Sedang Dikerjakan Oleh Ahlinya</h6>
-                                            <p class="m-0 text-truncate text-14"> <span
-                                                    class="badge bg-light text-secondary">Romanda</span> <i
-                                                    class="fas fa-long-arrow-alt-right pt-1"></i>
-                                                <span
-                                                    class="badge bg-light text-secondary font-weight-normal">Aidil</span>
-                                            </p>
-                                        </div>
-                                        <div class="col-2 text-center">
-                                            <a href="#">
-                                                <i class="fas fa-angle-right text-secondary"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
 
                         </div>
                         <hr>
@@ -242,38 +218,44 @@
                             style="z-index: 12; position: absolute;">
                             <div class="row bg-white d-flex align-items-center h-100">
                                 <div class="col-3">
-                                    <i class="fas fa-archive text-14 text-primary"></i>
-                                    <p class="m-0 text-12 text-primary font-weight-bold">Home</p>
+                                    <a href="index.html" class="text-decoration-none text-primary">
+                                        <i class="fas fa-archive text-14"></i>
+                                        <p class="m-0 text-12 font-weight-bold">Home</p>
+                                    </a>
                                 </div>
                                 <div class="col-3">
-                                    <i class="fab fa-buffer text-14"></i>
-                                    <p class="m-0 text-12">Task</p>
+                                    <a href="task.html" class="text-decoration-none text-secondary">
+                                        <i class="fab fa-buffer text-14"></i>
+                                        <p class="m-0 text-12">Task</p>
+                                    </a>
                                 </div>
                                 <div class="col-3">
-                                    <i class="fas fa-comment-dots text-14"></i>
-                                    <p class="m-0 text-12">Inbox</p>
+                                    <a href="inbox.html" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-comment-dots text-14"></i>
+                                        <p class="m-0 text-12">Inbox</p>
+                                    </a>
                                 </div>
                                 <div class="col-3">
-                                    <i class="fas fa-record-vinyl text-14"></i>
-                                    <p class="m-0 text-12">ROM</p>
+                                    <a href="rom.html" class="text-decoration-none text-secondary">
+                                        <i class="fas fa-record-vinyl text-14"></i>
+                                        <p class="m-0 text-12">ROM</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
 
-
-
-
-                        <div class="vh-100 bg-o-success overlay">
-                            <div id="slideAddTask" class="slideDown mx-n4">
-                                <div class="boxIcon bg-o-primary mx-auto mb-1">
-                                    <a id="close">
-                                        <i class="fas fas fa-times text-secondary"></i>
-                                    </a>
-                                </div>
-                                <div class=" card bg-white mx-n1 border-0">
+                        <div class="overlay" style="margin-left: -30px;" id="overlay"></div>
+                        <div id="slideAddTask" class="slideDown mx-n4">
+                            <div class="boxIcon bg-o-primary mb-1 mx-auto">
+                                <a id="close">
+                                    <i class="fas fas fa-times text-secondary"></i>
+                                </a>
+                            </div>
+                            <div class="card bg-white mx-n1 border-0">
+                                <form class="mt-2">
                                     <div class="card-body">
-                                        <h5 class="font-weight-bold text-14 text-secondary m-0">Add Task</h5>
-                                        <form>
+                                        <h5 class="font-weight-bold text-14 text-secondary mb-4">Add Task</h5>
+                                        <div class="scroll-Y" style="overflow-y: scroll; max-height: 72vh;">
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="" placeholder="By">
                                             </div>
@@ -289,9 +271,20 @@
                                             <div class="form-group">
                                                 <input type="text" class="form-control" id="" placeholder="Title">
                                             </div>
-                                        </form>
+                                            <div class="form-group">
+                                                <textarea class="form-control" name="" id="" rows="5"
+                                                    placeholder="Description"></textarea>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="card-footer bg-white border-0">
+                                        <div class="text-right">
+                                            <a href="#" id="close" class="btn btn-light text-12">Cancel</a>
+                                            <button type="submit"
+                                                class="btn btn-success text-12 shadow-sm">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

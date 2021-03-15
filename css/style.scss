@@ -1,7 +1,7 @@
 @import "_custom.scss";
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif!important;
   height: 100vh;
   overflow-y: hidden;
   // background-color: #f6f9fc;
@@ -95,15 +95,20 @@ body {
 }
 
 .slideTop{
-  transform: translateY(-100%);
+  transform: translateY(-107%);
+  z-index: 50!important;
+  top: 0;
+  margin-bottom: 20px;
   .card{
-    height: 85vh;
+    max-height: 90vh;
     transition: .4s ease-in-out;
   }
+  
 }
 
 .slideDown{
   transform: translateY(0);
+  z-index: 50!important;
   .card{
     height: 0vh; 
     bottom: 0; 
@@ -112,11 +117,37 @@ body {
     width: 100%;
     transition: .4s ease-in-out;
   }
+  
 }
 
 .overlay{
   height: 100vh;
-  // width: 100vw;
-  z-index: 200;
-  background-color: rgba(241, 0, 0, 0.2);
+  width: 100%;
+  background-color: rgba(#000, .4);
+  position: absolute;
+  // padding-left: -30px;
+  transition: .4s ease-in;
+  z-index: 50!important;
+}
+
+.overlayShow{
+  height: 100vh;
+  width: 100%;
+  background-color: salmon;
+  position: absolute;
+  // margin: 0 0 0 -30px;
+  transform: translateY(0);
+  z-index: 40!important;
+}
+
+
+
+.form-control{
+  border: .5px solid $light;
+  border-radius: 2px!important;
+  font-family: "Nunito Sans", sans-serif!important;
+  font-size: 12px;
+  &::placeholder{
+    font-size: 10px!important;
+  }    
 }
